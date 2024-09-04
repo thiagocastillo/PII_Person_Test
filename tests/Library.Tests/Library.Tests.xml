@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Library.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Ucu.Poo.Persons.Tests.PersonTests">
+            <summary>
+            Tests para la clase <see cref="T:Ucu.Poo.Persons.Person"/>.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.Persons.Tests.PersonTests.TestProperties">
+            <summary>
+            Prueba getters y setters de la clase <see cref="T:Ucu.Poo.Persons.Person"/>.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.Persons.Tests.PersonTests.TestNullAndEmptyNameAndFamilyName">
+            <summary>
+            Prueba que no se puedan asignar string vacías o null a las
+            propiedades de la clase <see cref="T:Ucu.Poo.Persons.Person"/>.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.Persons.Tests.PersonTests.TestIntroduceTo">
+            <summary>
+            Prueba el método <see cref="M:Ucu.Poo.Persons.Person.IntroduceTo(Ucu.Poo.Persons.Person)"/>.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.Persons.Tests.PersonTests.TestID">
+            <summary>
+            Prueba que no se pueda asignar una cédula inválida.
+            </summary>
+        </member>
+    </members>
+</doc>

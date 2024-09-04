@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Library</name>
+    </assembly>
+    <members>
+        <member name="T:Ucu.Poo.Persons.IdUtils">
+            <summary>
+            Esta clase valida cédulas de identidad.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.Persons.IdUtils.IdIsValid(System.String)">
+            <summary>
+            Valida un número de cédula de identidad; el número puede tener o no puntos y el guión pero debe tener el dígito verificador. Adaptado
+            de https://es.wikipedia.org/wiki/C%C3%A9dula_de_Identidad_de_Uruguay#Match_on_Card.
+            </summary>
+            <param name="id">El número de cédula.</param>
+            <returns>Retorna true si el número de cédula es válido y false en caso contrario.</returns>
+        </member>
+        <member name="T:Ucu.Poo.Persons.Person">
+            <summary>
+            Esta clase representa una persona con clase y apellido.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.Persons.Person.#ctor(System.String,System.String)">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:Ucu.Poo.Persons.Person"/> con
+            el nombre y la cédula —id— recibidos como argumento.
+            </summary>
+            <param name="name">El nombre completo de la persona.</param>
+            <param name="id">La cédula de la persona.</param>
+        </member>
+        <member name="P:Ucu.Poo.Persons.Person.Name">
+            <summary>
+            Obtiene o establece el nombre de la persona. El nombre se puede
+            establecer sólo si no está en blanco.
+            </summary>
+            <value>El nombre de la persona.</value>
+        </member>
+        <member name="P:Ucu.Poo.Persons.Person.Id">
+            <summary>
+            Obtiene o establece la cédula —id— de la persona. La cédula se puede
+            establecer solo si es válida.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.Persons.Person.IntroduceTo(Ucu.Poo.Persons.Person)">
+            <summary>
+            Esta persona se presenta con otra.
+            </summary>
+            <param name="person">La persona a la cual presentarse.</param>
+        </member>
+    </members>
+</doc>
